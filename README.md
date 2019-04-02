@@ -72,7 +72,8 @@ Add these string constants to your res/values/strings.xml:
 
 Add this style to your res/values/styles.xml:
 
-```<style name="AlertDialogCustom" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+```
+<style name="AlertDialogCustom" parent="@android:style/Theme.Material.Light.Dialog.Alert">
         <item name="android:colorAccent">@color/colorAccent</item>
     </style>
 ``` 
