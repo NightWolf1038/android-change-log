@@ -68,6 +68,17 @@ Add these string constants to your res/values/strings.xml:
 * `changelog_show_full`: This text is shown on the button to display the full change log in the show-only-what’s-new-mode.
 * `background_color`: The background color of the dialog. You can use color names as defined [here](http://developer.android.com/reference/android/graphics/Color.html#parseColor%28java.lang.String%29) or hex codes like `#002060`.
 
+## Add custom style
+
+Add this style to your res/values/styles.xml:
+
+```<style name="AlertDialogCustom" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+``` 
+
+You can create a custom style for your AlertDialog. Just make sure to update it in the ChangeLog class!
+
 ## Write log
 
 Add a file `res/raw/changelog.txt` to your project and fill it with your change log.
