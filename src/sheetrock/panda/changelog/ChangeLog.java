@@ -135,12 +135,13 @@ public class ChangeLog {
         wv.loadDataWithBaseURL(null, this.getLog(full), "text/html", "UTF-8", null);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(this.context,
-                android.R.style.Theme_Dialog));
+                R.style.AlertDialogCustom));
         builder.setTitle(
                 context.getResources().getString(
                         full ? R.string.changelog_full_title : R.string.changelog_title))
                 .setView(wv)
                 .setCancelable(false)
+                .setIcon(R.mipmap.ic_launcher_round) //Replace with your own icon
                 // OK button
                 .setPositiveButton(context.getResources().getString(R.string.changelog_ok_button),
                         new DialogInterface.OnClickListener() {
