@@ -75,7 +75,7 @@ Add this style to your res/values/styles.xml:
 ```
 <style name="AlertDialogCustom" parent="@android:style/Theme.Material.Light.Dialog.Alert">
         <item name="android:colorAccent">@color/colorAccent</item>
-    </style>
+</style>
 ``` 
 
 You can create a custom style for your AlertDialog. Just make sure to update it in the ChangeLog class!
