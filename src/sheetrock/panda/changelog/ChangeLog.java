@@ -66,14 +66,7 @@ public class ChangeLog {
         // get version numbers
         this.lastVersion = sp.getString(VERSION_KEY, NO_VERSION);
         Log.d(TAG, "lastVersion: " + lastVersion);
-        try {
-            this.thisVersion = context.getPackageManager().getPackageInfo(context.getPackageName(),
-                    0).versionName;
-        } catch (NameNotFoundException e) {
-            this.thisVersion = NO_VERSION;
-            Log.e(TAG, "could not get version name from manifest!");
-            e.printStackTrace();
-        }
+        this.thisVersion = BuildConfig.VERSION_NAME;
         Log.d(TAG, "appVersion: " + this.thisVersion);
     }
 
